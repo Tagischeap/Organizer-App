@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Capstone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Page Title</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <!-- page one: main interface -->
+
+  <div id="page_notes" data-role="page">
+    <div data-role="header">
+      <h2>List</h2>
+      <a href="#page_addNote" data-icon="plus" class="ui-btn-right" data-role="button">Add</a>
+
+    </div>
+    <div class="ui-content">
+      <ul id="list_notes" data-role="listview">
+
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- page two: view entry -->
+
+  <div id="page_viewNote" data-role="page">
+    <div data-role="header">
+      <h2>View Inventory</h2>
+      <a href="#page_notes" data-role="button" data-icon="carat-l">Back</a>
+      <a href="#page_editNote" data-role="button" data-icon="edit">Edit</a>
+
+    </div>
+    <div class="ui-content">
+      <h2>Test Entry</h2>
+      <p>Content</p>
+    </div>
+  </div>
+
+  <!-- page three: new entry -->
+
+  <div id="page_addNote" data-role="page">
+    <div data-role="header">
+      <h2>New Entry</h2>
+      <a data-rel="back" data-role="button" data-icon="carat-l">Back</a>
+    </div>
+    <div class="ui-content">
+      <input type="text" id="tf_title">
+      <textarea id="tf_content"></textarea>
+      <a id="btn_addNote" href="#page_notes" data-role="button">Add Entry</a>
+    </div>
+
+  </div>
+
+  <div id="page_editNote" data-role="page">
+    <div data-role="header">
+      <h2>Edit Entry</h2>
+      <a data-rel="back" data-role="button" data-icon="carat-l">Back</a>
+      <a id="btn_deleteNote" href="#page_notes" data-role="button" data-icon="delete">Delete</a>
+    </div>
+    <div class="ui-content">
+      <input type="text" id="tf_title_edit">
+      <textarea id="tf_content_edit"></textarea>
+      <a id="btn_editNote" href="#page_viewNote" data-role="button">Edit Entry</a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
